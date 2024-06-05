@@ -1,0 +1,78 @@
+body{
+    display: flex;
+    background-color: aqua;
+}
+.box{
+    width: 457px;
+    height: 138px;
+    border: 1px;
+    border-color: black ;
+    padding: 4px;
+    background-color: white;
+}
+.imgbox{
+    padding-bottom: 0px;
+    vertical-align: center;
+    padding-top: 4px;
+    padding-left: 4px;
+}
+
+img{
+    width: 130px;
+    height: 130px;
+    float: left;
+    margin-right: 18px;
+    padding: 0px;
+    vertical-align: center;
+}
+
+.username{
+    margin-top: 14px;
+    margin-left: 14px;
+    margin-bottom: 0px;
+}
+
+#user{
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.txt{
+padding-top: 14px;
+}
+
+#about{
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        margin-top:  0px;
+        margin-bottom: 0px;
+    }
+
+.actions{
+    display: flex;
+    color: #858991;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.symbol{
+    width: 20px;
+    height: 20px;
+    margin-right: 14px;
+    margin-top: 14px;
+}
+
+.count{
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 15px;
+        margin-right: 24px;
+        margin-bottom: 0px;
+}

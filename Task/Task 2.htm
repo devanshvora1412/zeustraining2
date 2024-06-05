@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <link rel="stylesheet" href="task2.css">
+    <!-- <script src="valid.js"></script> -->
+    <script>
+        function validateForm() {             
+            const x = document.getElementById("Name").value;
+            const y = document.getElementById("comments").value;
+            let maleChecked = document.getElementById("male").checked;
+            let femaleChecked = document.getElementById("female").checked;
+
+            if (x.trim() === ""){
+                alert("All fields are compulsory.");
+                document.getElementById("Name").focus();
+                return false;
+            } else if (y.trim() === ""){
+                alert("All fields are compulsory.");
+                document.getElementById("comments").focus();
+                return false;
+            } else if (!maleChecked && !femaleChecked){
+                alert("All fields are compulsory.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+   <div id="heading"><div id="txt"><h1>My first web page</h1></div>
+<div id="blank"></div></div>
+   <h2>What this is</h2>
+   <p>Welcome to my <i>my first webpage.</i> I created this webpage without the assistance of a webpage editor.Just my little text editor and a keen <b>understanding of html.</b></p>
+   <h2>Why this is</h2>
+   <div id="why"><p>
+    <ul><li>To learn HTML</li>
+    <li>List elements <br>
+        <ol>1. Home</ol>
+        <ol>2. FAQ</ol>
+        <ol>3. Contact</ol>
+        <ol>4. About</ol></li>
+    <li>Here I have created ordered and unordered list</li>
+</ul></p>
+</div>
+    <h2>ZeusLearning.com</h2>
+    <a href="https://www.zeuslearning.com/" target="_blank">This link will open zeuslearning.com in new tab</a>
+    <h2>On click of following image navigate to Google.com</h2>
+    <a href="https://www.google.co.in/" target="_blank">
+        <img src="logo.jpg" alt="Google Logo">
+        </a>
+        <h3>Some random table</h3>
+        <table>
+            <tr>
+            <td>Row1, cell 1</td>
+            <td>Row1, cell 2</td>
+            <td>Row1, cell 3</td>
+            </tr>
+            <tr>
+                <td>Row2, cell 1</td>
+                <td>Row2, cell 2</td>
+                <td>Row2, cell 3</td>
+            </tr>
+            <tr>
+                <td>Row3, cell 1</td>
+                <td>Row3, cell 2</td>
+                <td>Row3, cell 3</td>
+            </tr>
+            <tr>
+                <td>Row4, cell 1</td>
+                <td>Row4, cell 2</td>
+                <td>Row4, cell 3</td>
+            </tr>
+        </table>
+    <h3>Some random form</h3>
+    <p><b><i>NOTE:</i></b>It looks the part, but won't do anything.</p>
+    <form name="yourForm" onsubmit="return validateForm()">
+        <label for="Name">Name:</label><br><br>
+        <input type="text" id="Name" name="name" placeholder="Your name"><br><br>
+        <label for="Comments">Comments:</label><br><br>
+        <textarea name="comments" id="comments" cols="15" rows="10" placeholder="Your comments"></textarea><br><br>
+        <label for="Gender">Are you:</label><br><br>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male"> Male</label><br><br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female"> Female</label><br><br>
+        <input type="submit" value="Submit Query" style="background-color: lightgrey;">   
+    </form>
+</body>
+</html>

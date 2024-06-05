@@ -1,0 +1,64 @@
+body{
+    background-color: bisque;
+}
+
+h1{
+    text-align: center;
+    color: beige;
+    word-spacing: 10px;
+    letter-spacing: 7px;
+    font-style: italic;
+    padding:5px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+h2{
+    background-color: rgb(25, 122, 25);
+    color: white;
+    padding-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#why{
+    color: brown;
+    font-style: italic;
+}
+
+#heading{
+    height: 50px;
+    width: auto;
+}
+#txt{
+    height: 40px;
+    width: auto;
+    background-color: brown;
+}
+
+#blank{
+    height: 10px;
+    width: auto;
+    background-color: red;
+}
+
+a{
+    text-decoration: none;
+}
+
+h3{
+    color: rgb(88, 156, 156);
+}
+
+img{
+    height: 150px;
+    width: 200px;
+    padding: left 20px ;
+    border-style: dotted;
+    border-width: 2px;
+    border-color: lightgray;
+}
+
+table, tr, td {
+    border: 1px solid;
+    background-color: darkgray;
+  }
+
