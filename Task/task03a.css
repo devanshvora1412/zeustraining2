@@ -5,6 +5,9 @@
     grid-column-end: 4;
     align-content: center;
     color: white;
+    border: 1px;
+    border-style: solid;
+    border-color:black
 }
  
 #two{
@@ -16,7 +19,10 @@
     grid-row-start: 2;
     grid-row-end:3;
     align-content: center;
-    color: white
+    color: white;
+    border: 1px;
+    border-style: solid;
+    border-color:black
 }
 
 #three{
@@ -29,7 +35,10 @@
     grid-row-start: 2;
     grid-row-end:4;
     align-content: center;
-    color: white
+    color: white;
+    border: 1px;
+    border-style: solid;
+    border-color:black
     
 }
 
@@ -41,7 +50,10 @@
     grid-row-start: 3;
     grid-row-end:4;
     align-content: center;
-    color: white
+    color: white;
+    border: 1px;
+    border-style: solid;
+    border-color:black
 }
 
 #five{
@@ -52,7 +64,10 @@
     grid-row-start: 3;
     grid-row-end:4;
     align-content: center;
-    color: white
+    color: white;
+    border: 1px;
+    border-style: solid;
+    border-color:black
 }
 
 #six{
@@ -63,7 +78,10 @@
     grid-row-start: 4;
     grid-row-end:5;
     align-content: center;
-    color: white
+    color: white;
+    border: 1px;
+    border-style: solid;
+    border-color:black
 }
 
 .container{
