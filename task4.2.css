@@ -140,7 +140,7 @@ body{
     height:30px;
     width: 30px;
     margin-top: 10px;
-    margin-left: auto;
+    margin-left: 80%;
     margin-right: 5%;
     justify-items: flex-end;
 }
@@ -181,12 +181,12 @@ body{
 }
  
 .selected{
-    width: 200px;
+    width: 160px;
     height: 35px;
 }
 
 .unselected{
-    width: 200px;
+    width: 160px;
     height: 35px;
     background-color: white ;
 }
@@ -196,8 +196,8 @@ body{
 }
 
 .form-check-input {
-    width: 15px;
-    height: 15px;
+    width: 17px;
+    height: 17px;
     background-color: white;
     border-radius: 50%;
     vertical-align: middle;
@@ -210,9 +210,22 @@ body{
     margin-right: 5%;
 }
 
+#flexCheckDefault{
+    background-image: url('circle.png');
+    background-position: center center;
+    background-size: cover;
+}
+
+#flexCheckDef{
+    background-image: url('minus-sign.png');
+    background-position: center center;
+    background-size: contain;
+}
+
+
 .input{
-    width: 15px;
-    height: 15px;
+    width: 17px;
+    height: 17px;
     background-color: white;
     border-radius: 50%;
     vertical-align: middle;
@@ -224,6 +237,9 @@ body{
     margin-left: 185px;
     margin-right: 5%;
     margin-top: 10px;
+    background-image: url('minus-sign.png');
+    background-position: center center;
+    background-size: cover;
 }
 
 
@@ -315,7 +331,7 @@ body{
     display: none;
     position: absolute;
     background-color: white;
-    min-width: 160px;
+    min-width: 140px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: auto;
     right: 0;
@@ -336,6 +352,7 @@ body{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     right: 0;
+    overflow-y: scroll;
   }
   
   /* Change color of dropdown links on hover */
@@ -357,6 +374,7 @@ body{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     right: 0;
+    overflow-y: scroll;
   }
   
   /* Change color of dropdown links on hover */
