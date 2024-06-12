@@ -87,13 +87,7 @@ body{
     padding-right: 10px;
 }
 
-.flex-icon{
-    display: none;
-}
 
-.flex-icon > img{
-    width: 25px;
-}
 
 #total{
     margin: 20px;
@@ -186,15 +180,6 @@ body{
     flex-wrap: wrap
 }
  
-.navnoti{
-    display: flex;
-}
-
-.hidden{
-    background-color: white;
-    display: none;
-}
-
 .selected{
     width: 200px;
     height: 35px;
@@ -204,6 +189,10 @@ body{
     width: 200px;
     height: 35px;
     background-color: white ;
+}
+
+.form-check-label{
+    width: 85%;
 }
 
 .form-check-input {
@@ -217,14 +206,27 @@ body{
     -webkit-appearance: none;
     outline: none;
     cursor: pointer;
-    margin-left: 90px;
+    margin-left: 10px;
     margin-right: 5%;
 }
 
-.noti{
-    width: auto;
-    height: auto;
+.input{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 2px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 185px;
+    margin-right: 5%;
+    margin-top: 10px;
 }
+
+
 
 .unsel{
     width: 300px;
@@ -261,6 +263,15 @@ body{
     color: #1f7a54;
 }
 
+.times{
+    font-size: smaller;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    margin-right: 5%;
+    justify-content: right;
+    color: #1f7a54;
+}
+
 .tim{
     font-size: smaller;
     color: #1f7a54;
@@ -271,7 +282,7 @@ body{
 }
 
 .tiless{
-    height: 600px;
+    height: 550px;
 
 }
 
@@ -289,6 +300,70 @@ body{
 .checkbox-round:checked {
     background-color: gray;
 }
+
+.flex-icon{
+    display: none;
+}
+
+.flex-icon > img{
+    width: 25px;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.hidden {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: auto;
+    right: 0;
+  }
+  
+/* The container <div> - needed to position the dropdown content */
+#dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .announce {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .announce a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  #dropdown:hover .announce {display: block;}
+
+  #dropdowns{
+    position: relative;
+    display: inline-block;
+  }
+
+  .noti {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .noti a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  #dropdowns:hover .noti {display: block;}
 
 @media (max-width: 1000px) {
     .container1 {
@@ -313,16 +388,13 @@ body{
         display: none;
     }
     .flex-icon {
-        display: block;
+        position: relative;
+        display: inline-block;
     }
-    .hidden{
-        background-color: white;
-        display: block;
-    }
-
-    .flex-icon:hover + .hidden{
-        display: block;
-        background-color: black;
-    }
+      /* Change color of dropdown links on hover */
+  .hidden a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .flex-icon:hover .hidden {display: block;}
 }
 
